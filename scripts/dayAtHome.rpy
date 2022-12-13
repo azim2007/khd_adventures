@@ -1,4 +1,11 @@
 label dayAtHome:
+    $ new_chapter(1, u"КХДшное лето. День 1")
+
+    show screen nextDay("День дома", "screen trol") with Dissolve(0.5)
+    play sound khdAmbList["sranie"]                                     #экран начала дня
+    $ renpy.pause(2)
+    hide screen nextDay with Dissolve(0.5)
+
     scene bg intro_xx                                       #салон автобуса
     show unblink
     $ renpy.pause(1) 
@@ -9,11 +16,11 @@ label dayAtHome:
 
     show blink
     $ renpy.pause(1) 
-    scene toilet_room
+    scene bg toilet_room
     show unblink                                            #моргание
     $ renpy.pause(1) 
 
-    play music khdMusicList["pofig"]
+    play music khdMusicList["pofig"] loop volume 0.5        #музыка пофиг
     th "о, {w}так-то лучше"
     th "че то по моему мнению галлюны это немного ненормально {w}а, блин,{w} я забыл, что я сам по себе немного ненормальный"
     th "а вообще {w}ПОХУЙ НАХУЙ!"
@@ -28,6 +35,40 @@ label dayAtHome:
     with Dissolve(0.5)
     th "Икарус... {w}Икарус... {w}Икарус..."
     hide prologue_dream
-    scene toilet_room                                        #Возвращение из воспоминаний обратно в ванную
+    scene bg toilet_room                                    #Возвращение из воспоминаний обратно в ванную
     with Dissolve(0.5)
     "я чуть не кончил во второй раз"
+
+    play sound khdAmbList["unitaz"]                         #звук смыва
+    "..."
+    "я смыл за собой все свои выделения и направился на кухню, чтоб позавтракать как настоящий чемпион {w}по количеству дрочек в день"
+    scene bg kitchen_room with Dissolve(0.5)                #переход в кухню
+    th "хмм... {w}чтоб себе приготовить?"
+    th "пожарю яйца"
+    play ambience khdAmbList["friing"] loop
+
+    window hide
+    $ set_mode_nvl()                                        #nvl mode
+    nvl show Dissolve(0.3)
+    "Пока жарятся яйца, немного расскажем вам о главном герое"
+    "Наверное, вы уже поняли, что он немного не нормальный, {w}и в дальнейшем найдете этим мыслям хорошее подтверждение"
+    "ГГ, ясное дело, был взят с ИРЛ человека, но ИРЛ он не настолько необычен {w}в общем, все, что он делает в моде - ЛИШЬ СЦЕНИЧЕСКИЙ ОБРАЗ, ИРЛ бы он такого не сделал"
+    "кстати, ГГ зовут Богдан {w}вот и познакомились"
+    "Что такое КХД из названия мода?"
+    "Клуб"
+    "Хронических"
+    "Девственников"
+    "В общем, в этом клубе состоят 3 человека: {w}Богдан, Макар и Автор этого мода"
+    "Суть клуба в полном игнорировании тней(селедок) и полной отдаче какому-нибудь делу {w} (искусству, созданию чего-либо)"
+    "в общем-то все, приятного прочтения!"
+    nvl hide Dissolve(0.3)
+    $ set_mode_adv()                                        #adv mode
+    window show
+
+    "о, яйца пожарились!"
+    stop ambience
+    th "бля, {w}я их в скорлупе пожарил..."
+    th "ну и ладно {w}съем со скорлупой"
+
+
+    
