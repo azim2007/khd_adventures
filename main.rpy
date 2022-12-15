@@ -4,19 +4,28 @@ init:
     $ khdRoot     = "khd_adventures/"
     $ khdBg       = khdRoot + "bg/"
     $ khdScreens  = khdRoot + "screens/"
+    $ khdSprites  = khdRoot + "sprites/"
 
     #дополнительные герои
     $ bgd = Character("Богдан", color="#89ce00", what_color="#FFDD7D")
+    $ mkr = Character("Макар", color="#FFF226", what_color="#FFDD7D")
+
+    #словарь цветов, в зависимости от времени
+    $ timeColorDict = {
+        "day" :         im.matrix.tint(1, 1, 1),
+        "sunset" :      im.matrix.tint(0.94, 0.82, 1.0),
+        "night" :       im.matrix.tint(0.63, 0.78, 0.82),
+    }
 
     #картинки для перехода между днями
-    image screen trol = (khdScreens + "bogdan_trolley.jpg")
-    image screen tvar = (khdScreens + "bogdan_tvar.jpg")
-    image screen huev = (khdScreens + "huevyy.jpg")
+    image screen trol           = (khdScreens + "bogdan_trolley.jpg")
+    image screen tvar           = (khdScreens + "bogdan_tvar.jpg")
+    image screen huev           = (khdScreens + "huevyy.jpg")
 
     #дополнительные бэкграунды
     image bg toilet_room        = (khdBg + "toilet.jpg")
     image bg kitchen_room       = (khdBg + "kitchen.jpg")
-    image bg khd_podezd             = (khdBg + "podezd.jpg")
+    image bg khd_podezd         = (khdBg + "podezd.jpg")
     image bg winter_outside     = (khdBg + "winter_outside.jpg")
     image bg tram_station       = (khdBg + "tram_station.jpg")
 
@@ -36,6 +45,7 @@ init:
         add screenName
         text dayName size 250 outlines[ (5, "#000000", 0, 0) ]:
             align(0.5, 0.5)
+    
 
 init python:
     #названия папок
@@ -63,5 +73,6 @@ init python:
         "closing_door"  : khdAmbience + "closing_door.mp3",
         "podezd_door"   : khdAmbience + "domofon_sound.mp3",
         "boots_on_snow" : khdAmbience + "boots_on_snow.mp3",
-        "tram_sound"    : khdAmbience + "tram_sound.mp3"
+        "tram_sound"    : khdAmbience + "tram_sound.mp3",
+        "metal_noise"   : khdAmbience + "metal_noise.mp3",
     }
