@@ -37,6 +37,7 @@ init:
     image cg makar_cup          = (khdBg + "makar_memories.jpg")
     image cg ext_tram           = (khdBg + "tram_outside.jpg")
     image cg int_tram           = (khdBg + "tram_inside.jpg")
+    image cg svar_apparat       = (khdBg + "svar_apparat.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):
@@ -60,6 +61,7 @@ init python:
         "pofig"         : khdMusic + "carbo8_polubomu.mp3",
         "vangers"       : khdMusic + "fostral_theme.mp3",
         "slipknot_sic"  : khdMusic + "slipknot_sic.mp3",
+        "i_w_t_p_gchi"  : khdMusic + "i_want_to_play_gachi.mp3",
     }
 
     #дополнительные эмбиенсы
