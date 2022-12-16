@@ -8,7 +8,7 @@ init:
 
     #дополнительные герои
     $ bgd = Character("Богдан", color="#89ce00", what_color="#FFDD7D")
-    $ mkr = Character("Макар", color="#FFF226", what_color="#FFDD7D")
+    $ mkr = Character("Икар", color="#FFF226", what_color="#FFDD7D")
 
     #словарь цветов, в зависимости от времени
     $ timeColorDict = {
@@ -61,7 +61,9 @@ init python:
         "pofig"         : khdMusic + "carbo8_polubomu.mp3",
         "vangers"       : khdMusic + "fostral_theme.mp3",
         "slipknot_sic"  : khdMusic + "slipknot_sic.mp3",
-        "i_w_t_p_gchi"  : khdMusic + "i_want_to_play_gachi.mp3",
+        "i_w_t_p_gachi" : khdMusic + "i_want_to_play_gachi.mp3",
+        "semyaiz"       : khdMusic + "semyaizverzh.mp3",
+        "chunga"        : khdMusic + "ass_chunga.mp3",
     }
 
     #дополнительные эмбиенсы
