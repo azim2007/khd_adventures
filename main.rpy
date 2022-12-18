@@ -9,6 +9,7 @@ init:
     #дополнительные герои
     $ bgd = Character("Богдан", color="#89ce00", what_color="#FFDD7D")
     $ mkr = Character("Икар", color="#FFF226", what_color="#FFDD7D")
+    $ ant = Character("Тоха", color="#ffff00", what_color="#FFDD7D")
 
     #словарь цветов, в зависимости от времени
     $ timeColorDict = {

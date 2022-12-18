@@ -126,7 +126,7 @@ label khdDay1:
     th "то есть таких как я"
     th "ну надо навеное зайти к ним, поздороваться что-ли"
 
-    play sound sfx_close_door_1                             #звук двери
+    play sound sfx_open_door_clubs_2                        #звук двери
     play ambience ambience_clubs_inside_day loop            #звук внутри клубов
     scene bg int_clubs_male_day                             #внутри клубов
     show mkr norm far at cright                             #Макар
@@ -155,7 +155,7 @@ label khdDay1:
     bgd "ага да, миры у вас там наверное называются фострал, глоркс, икспло, да?"
     show mkr smile far at cright                            #Макар улыбается
     mkr "а ты откуда знаешь? {w}ну хотя ладно, кстати, хочешь в наши игры поиграть?"
-
+    
     play music khdMusicList["cool_mus"]                     #крутая музыка)
     bgd "а какие есть?"
     mkr "есть дота 2, недавно сделали, {w}на трубе играть умеешь?"
@@ -186,4 +186,10 @@ label khdDay1:
     show mkr sad far at cright                              #Макар грустный
     mkr "блиин, вот никто в нее играть не может"
     th "ну ниче, Икар, погоди, лет через 30 это станет мЕйНсТрИмОм"
+    play sound sfx_open_door_clubs                          #открытие двери (Тоха)
+    show mkr norm far at cright                             #Макар нормальный
+    mkr "о, Тоха пришел"
+
+    "в комнату зашел кудрявый чел, чем-то похожий на Электроника, но в отличии от него этот чел был темноволосым"
+
 
