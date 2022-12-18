@@ -38,6 +38,7 @@ init:
     image cg ext_tram           = (khdBg + "tram_outside.jpg")
     image cg int_tram           = (khdBg + "tram_inside.jpg")
     image cg svar_apparat       = (khdBg + "svar_apparat.jpg")
+    image cg makar_dota         = (khdBg + "makar_dota.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):
@@ -46,7 +47,14 @@ init:
         add screenName
         text dayName size 250 outlines[ (5, "#000000", 0, 0) ]:
             align(0.5, 0.5)
-    
+
+    #спрайт "уходит" с экрана вправо
+    transform goRight:
+        linear 0.3 xpos 1.3
+
+    #спрайт "уходит" с экрана влево
+    transform goLeft:
+        linear 0.3 xpos -0.3
 
 init python:
     #названия папок
@@ -55,6 +63,7 @@ init python:
     khdMusic    = khdRoot + "music/"
     khdAmbience = khdRoot + "ambience/"
     khdSprites  = khdRoot + "sprites/"
+    khdVideos   = khdRoot + "video/"
 
     #дополнительная музыка
     khdMusicList = {
@@ -64,6 +73,7 @@ init python:
         "i_w_t_p_gachi" : khdMusic + "i_want_to_play_gachi.mp3",
         "semyaiz"       : khdMusic + "semyaizverzh.mp3",
         "chunga"        : khdMusic + "ass_chunga.mp3",
+        "cool_mus"      : khdMusic + "ass_cool_mus.mp3",
     }
 
     #дополнительные эмбиенсы
@@ -79,4 +89,9 @@ init python:
         "boots_on_snow" : khdAmbience + "boots_on_snow.mp3",
         "tram_sound"    : khdAmbience + "tram_sound.mp3",
         "metal_noise"   : khdAmbience + "metal_noise.mp3",
+    }
+
+    #видео
+    khdVidList = {
+        "dota"          : khdVideos + "dota.avi", 
     }
