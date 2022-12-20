@@ -40,6 +40,7 @@ init:
     image cg int_tram           = (khdBg + "tram_inside.jpg")
     image cg svar_apparat       = (khdBg + "svar_apparat.jpg")
     image cg makar_dota         = (khdBg + "makar_dota.jpg")
+    image cg dv_us_from_roof    = (khdBg + "dv_us_from_roof.png")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):

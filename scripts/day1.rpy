@@ -210,13 +210,13 @@ label khdDay1:
     show ant smile at cleft                                 #Антон радостный
     ant "спасибо, уже прошло... {w}о, а это кто?"
     "Тоха показал на Богдана"
-    show mkr norm at left                                   #Макар нормальный
+    show mkr norm at right                                  #Макар нормальный
     bgd "прив, я Богдан, токмачто приехал"
     ant "а, ну привет, я Тоха"
     ant "ты в наши игры играл уже?"
     bgd "да, в дотку скатал, но это, мне не понравилось"
     show ant sad at cleft                                   #Антон грустный
-    ant "блин, ну это печально... {w}кстати, не хочешь помочь нам с новой игрой? {w}с вангерами? {w}тебе ведь Икар про нее
+    ant "блин, ну это печально... {w}кстати, не хочешь помочь нам с новой игрой? {w}с вангерами {w}тебе ведь Икар про нее
     рассказал?"
     show ant norm at cleft                                  #Антон нормальный
     bgd "дааааа, рассказал... но это, а какие требования?"
@@ -231,7 +231,7 @@ label khdDay1:
     play sound sfx_open_door_clubs_2                        #Богдан выходит из клуба
     scene bg ext_clubs_day with Dissolve(0.5)               #Клубы
     play ambience ambience_camp_center_day loop             #звуки природы)
-    play music music_list["feeling_good"]                   #музыка хорошее настроение
+    play music music_list["lightness"]                      #музыка хорошее настроение
     th "так, теперь мне надо к вожатой{w} за формой всякой и прочей херней"
     scene bg ext_houses_day with Dissolve(0.5)              #Дорога с домиками
     "Богдан прогулочным шагом шел по дороге между домиками"
@@ -249,8 +249,57 @@ label khdDay1:
 
     play music music_list["revenga"]                        #Энергичная музыка
     "Поток филосовских мыслей Богдана прервал удар по затылку"
-    with vpunvh                                             #тряска вверх-вниз
+    with vpunch                                             #тряска вверх-вниз
     "он тут же понял, что это Алиса или Ульяна и запаркурил со скамейки на крышу чьего-то домика"
+    scene cg dv_us_from_roof with Dissolve(0.5)             #Ульяна и Алиса, вид с крыши
+    "Это оказались две рыжие сразу"
+    th "ничесе у них удивленные лица"
+    dv "скок паркуришь? {w}ток по чесноку"
+    bgd "с 12 лет"
+    dv "норм для 12 лет"
+    play music music_list["went_fishing_caught_a_girl"]     #дружеская музыка
+
+    "поняв, что рыжие ему не угрожают, Богдан спустился с крыши, сделав сальто назад"
+    play sound sfx_body_bump                                #звук падения
+    scene bg ext_houses_day                                 #дорога с домиками
+    show dv grin pioneer2 at cright                         #Алиса с ухмылкой
+    show us grin pioneer at cleft                           #Ульяна с ухмылкой
+    with Dissolve(0.5)
+    dv "блин, аты реально нормис, как тебя зовут то?"
+    bgd "Райан Гослинг"
+    dv "кто?"
+    bgd "лан, шучу, Богдан"
+    dv "а меня зову..."
+    bgd "...Алиса"
+    show dv surprise pioneer2 at cright                     #Алиса удивлена
+    show us surp2 pioneer at cleft                          #Ульяна удивлена
+    dv "чее, откуда ты знаешь?"
+    us "а мое имя угадаешь?"
+    bgd "Ульяна"
+    dv "чеееееее"
+    us "чеееееее"
+    bgd "ну вот так вот, сам хз как"
+    bgd "мне к вожатой надо, я пойду"
+    dv "ок."
+    us "счастливо, Богдан!"
+    hide dv surprise pioneer2
+    hide us surp2 pioneer                                   #Алиса и Ульяна прячутся
+    with Dissolve(0.5)
+    $ renpy.pause(1)
+
+    scene bg ext_square_day                                 #площадь
+    show un serious pioneer far at left                     #серьезная Лена                         
+    with Dissolve(0.5)
+    th "площадь, на которой я уже был кучу раз, играя в бл"
+    th "И Лена, все так же скучающе читающая"
+
+
+    scene bg ext_house_of_mt_day with Dissolve(0.5)         #дом Ольдмитриевны
+    th "а вот и моя берлога на ближайшие 7 дней"
+    th "ща мы и узнаем, что это за вожатая на До..."
+    play sound sfx_medpunkt_door_open                       #звук двери
+    scene bg int_house_of_mt                                #в доме вожатой
+
 
 
 
