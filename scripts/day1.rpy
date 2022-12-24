@@ -292,6 +292,20 @@ label khdDay1:
     with Dissolve(0.5)
     th "площадь, на которой я уже был кучу раз, играя в бл"
     th "И Лена, все так же скучающе читающая"
+    th "хмм... что же она читает?"
+    play music music_list["raindrops"]                      #норм музыка
+    show un serious pioneer close at center                 #серьезная Лена близко
+    "Лена, занятая книгой, даже не заметила, как к ней подсел Богдан и начал пялиться в упор"
+    bgd "что читаешь?"
+    show un scared pioneer close at center                  #напуганная Лена близко
+    $ renpy.pause(1)
+    show un shy pioneer close at center                     #смущенная Лена близко
+    un "ооойй... я напугалась"
+    un "ммм... ну.... {w}это книга из библиотеки..."
+    bgd "а как называется?"
+    un "ну... вот в общем"
+    "Лена показала Богдану свою книгу"
+    scene cg malyshok_mares with Dissolve(0.5)              #ужасы малышка
 
 
     scene bg ext_house_of_mt_day with Dissolve(0.5)         #дом Ольдмитриевны

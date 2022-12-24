@@ -139,3 +139,73 @@ init 2:
         khdSprites + "anton/smile_normal.png", timeColorDict["night"])
     image ant smile close night  = im.MatrixColor(
         khdSprites + "anton/smile_close.png", timeColorDict["night"])
+
+    #*********************************Дора*************************************
+    #нормальный
+    
+    image dor norm far          = im.MatrixColor(
+        khdSprites + "dora/norm_far.png", timeColorDict["day"])
+    image dor norm              = im.MatrixColor(
+        khdSprites + "dora/norm_normal.png", timeColorDict["day"])
+    image dor norm close        = im.MatrixColor(
+        khdSprites + "dora/norm_close.png", timeColorDict["day"])
+
+    image dor norm far sunset   = im.MatrixColor(
+        khdSprites + "dora/norm_far.png", timeColorDict["sunset"])
+    image dor norm sunset       = im.MatrixColor(
+        khdSprites + "dora/norm_normal.png", timeColorDict["sunset"])
+    image dor norm close sunset = im.MatrixColor(
+        khdSprites + "dora/norm_close.png", timeColorDict["sunset"])
+
+    image dor norm far night    = im.MatrixColor(
+        khdSprites + "dora/norm_far.png", timeColorDict["night"])
+    image dor norm night        = im.MatrixColor(
+        khdSprites + "dora/norm_normal.png", timeColorDict["night"])
+    image dor norm close night  = im.MatrixColor(
+        khdSprites + "dora/norm_close.png", timeColorDict["night"])
+
+    #грустный
+
+    image dor sad far          = im.MatrixColor(
+        khdSprites + "dora/sad_far.png", timeColorDict["day"])
+    image dor sad              = im.MatrixColor(
+        khdSprites + "dora/sad_normal.png", timeColorDict["day"])
+    image dor sad close        = im.MatrixColor(
+        khdSprites + "dora/sad_close.png", timeColorDict["day"])
+
+    image dor sad far sunset   = im.MatrixColor(
+        khdSprites + "dora/sad_far.png", timeColorDict["sunset"])
+    image dor sad sunset       = im.MatrixColor(
+        khdSprites + "dora/sad_normal.png", timeColorDict["sunset"])
+    image dor sad close sunset = im.MatrixColor(
+        khdSprites + "dora/sad_close.png", timeColorDict["sunset"])
+
+    image dor sad far night    = im.MatrixColor(
+        khdSprites + "dora/sad_far.png", timeColorDict["night"])
+    image dor sad night        = im.MatrixColor(
+        khdSprites + "dora/sad_normal.png", timeColorDict["night"])
+    image dor sad close night  = im.MatrixColor(
+        khdSprites + "dora/sad_close.png", timeColorDict["night"])
+
+    #веселый
+
+    image dor smile far          = im.MatrixColor(
+        khdSprites + "dora/smile_far.png", timeColorDict["day"])
+    image dor smile              = im.MatrixColor(
+        khdSprites + "dora/smile_normal.png", timeColorDict["day"])
+    image dor smile close        = im.MatrixColor(
+        khdSprites + "dora/smile_close.png", timeColorDict["day"])
+
+    image dor smile far sunset   = im.MatrixColor(
+        khdSprites + "dora/smile_far.png", timeColorDict["sunset"])
+    image dor smile sunset       = im.MatrixColor(
+        khdSprites + "dora/smile_normal.png", timeColorDict["sunset"])
+    image dor smile close sunset = im.MatrixColor(
+        khdSprites + "dora/smile_close.png", timeColorDict["sunset"])
+
+    image dor smile far night    = im.MatrixColor(
+        khdSprites + "dora/smile_far.png", timeColorDict["night"])
+    image dor smile night        = im.MatrixColor(
+        khdSprites + "dora/smile_normal.png", timeColorDict["night"])
+    image dor smile close night  = im.MatrixColor(
+        khdSprites + "dora/smile_close.png", timeColorDict["night"])
