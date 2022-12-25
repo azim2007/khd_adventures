@@ -10,6 +10,7 @@ init:
     $ bgd = Character("Богдан", color="#89ce00", what_color="#FFDD7D")
     $ mkr = Character("Икар", color="#FFF226", what_color="#FFDD7D")
     $ ant = Character("Тоха", color="#ffff00", what_color="#FFDD7D")
+    $ dor = Character("Дора", color="#f95252", what_color="#FFDD7D")
 
     #словарь цветов, в зависимости от времени
     $ timeColorDict = {
@@ -42,6 +43,7 @@ init:
     image cg makar_dota         = (khdBg + "makar_dota.jpg")
     image cg dv_us_from_roof    = (khdBg + "dv_us_from_roof.png")
     image cg malyshok_mares     = (khdBg + "malyshok_mares.jpg")
+    image cg in_mirror          = (khdBg + "inmirror.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):
