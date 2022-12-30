@@ -1,6 +1,11 @@
 init:
     $ mods ["dayAtHome"] = u"КХДЪшное лето"
+    #переменные для сохранений
+    $ rootTitan = 0
+    $ rootDv = 0
+    $ rootMz = 0
 
+    #имена папок
     $ khdRoot     = "khd_adventures/"
     $ khdBg       = khdRoot + "bg/"
     $ khdScreens  = khdRoot + "screens/"
@@ -81,6 +86,7 @@ init python:
         "semyaiz"       : khdMusic + "semyaizverzh.mp3",
         "chunga"        : khdMusic + "ass_chunga.mp3",
         "cool_mus"      : khdMusic + "ass_cool_mus.mp3",
+        "opening_gachi" : khdMusic + "ass_opening_theme.mp3",
     }
 
     #дополнительные эмбиенсы
