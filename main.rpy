@@ -4,6 +4,11 @@ init:
     $ rootTitan = 0
     $ rootDv = 0
     $ rootMz = 0
+    $ evCibClubJoin = False
+    $ evMusClubJoin = False
+    $ evs1Day = {                   #события, происходящие в 1 день в совенке
+        "dvFall": False
+    }
 
     #имена папок
     $ khdRoot     = "khd_adventures/"
