@@ -448,3 +448,12 @@ label khdDay1:
     $ renpy.pause(1)
     show bg ext_dining_hall_away_day with Dissolve(0.5)     #столовая дельше
     play music music_list["goodbye_home_shores"]            #повседневная музыка
+    
+    #что делать после обеда
+    if evMusClubJoin:                                       #елси записался в музклуб, то на репу
+        call musClubAfterLunch1Day
+    elif evCibClubJoin:                                     #если не записался в муз, то на пляж
+        th "так, кибернетики звали меня после ужина, {w}получается сейчас я свободен, {w}как негр"
+        call beachAfterLunch1Day
+    else:                                                   #если никуда не записался, то на пляж
+        call beachAfterLunch1Day

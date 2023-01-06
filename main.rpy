@@ -6,6 +6,7 @@ init:
     $ rootMz = 0
     $ evCibClubJoin = False
     $ evMusClubJoin = False
+    $ evLibClubJoin = False
     $ evs1Day = {                   #события, происходящие в 1 день в совенке
         "dvFall": False
     }
@@ -56,6 +57,8 @@ init:
     image cg malyshok_mares     = (khdBg + "malyshok_mares.jpg")
     image cg in_mirror          = (khdBg + "inmirror.jpg")
     image cg oguzok_kitch       = (khdBg + "oguzok.jpg")
+    image cg panties            = (khdBg + "panties.jpg")
+    image cg under_water        = (khdBg + "under_water.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):
@@ -72,6 +75,15 @@ init:
     #спрайт "уходит" с экрана влево
     transform goLeft:
         linear 0.3 xpos -0.3
+
+    #эффект бега
+    transform khdRun:
+        zoom 1.05 anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)            
+        ease 0.20 pos (-25,25)
+        repeat
 
 init python:
     #названия папок
@@ -112,4 +124,5 @@ init python:
     #видео
     khdVidList = {
         "dota"          : khdVideos + "dota.avi", 
+        "dr_barec"      : khdVideos + "dream_bareckiy.avi", 
     }
