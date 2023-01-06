@@ -11,6 +11,10 @@ init:
         "dvFall": False
     }
 
+    $ evs2Day = {
+        "cleaninig" : "none",
+    }
+
     #имена папок
     $ khdRoot     = "khd_adventures/"
     $ khdBg       = khdRoot + "bg/"
