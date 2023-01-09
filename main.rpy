@@ -63,6 +63,8 @@ init:
     image cg oguzok_kitch       = (khdBg + "oguzok.jpg")
     image cg panties            = (khdBg + "panties.jpg")
     image cg under_water        = (khdBg + "under_water.jpg")
+    image cg broken_guitar      = (khdBg + "broken_guitar.jpg")
+    image cg dv_and_mustang     = (khdBg + "alice_and_mustang.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):
@@ -108,6 +110,7 @@ init python:
         "chunga"        : khdMusic + "ass_chunga.mp3",
         "cool_mus"      : khdMusic + "ass_cool_mus.mp3",
         "opening_gachi" : khdMusic + "ass_opening_theme.mp3",
+        "scarygym"      : khdMusic + "ass_scary_gym.mp3",
     }
 
     #дополнительные эмбиенсы

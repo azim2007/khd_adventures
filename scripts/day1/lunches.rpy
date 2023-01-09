@@ -323,7 +323,6 @@ label khdGirlLunch:
             show dv normal pioneer2 at left                 #Алиса нормальная
 
         "горячий шоколад)":
-            $ rootDv += 1                                   #рут Алисы плюс
             th "о, ща прикольнемся"
             play music khdMusicList["i_w_t_p_gachi"]        #веселая гачи музыка
             bgd "горячий шоколад"
