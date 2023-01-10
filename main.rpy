@@ -111,6 +111,8 @@ init python:
         "cool_mus"      : khdMusic + "ass_cool_mus.mp3",
         "opening_gachi" : khdMusic + "ass_opening_theme.mp3",
         "scarygym"      : khdMusic + "ass_scary_gym.mp3",
+        "jesus_tod"     : khdMusic + "jesus_tod.mp3",
+        "new_year"      : khdMusic + "new_year.mp3",
     }
 
     #дополнительные эмбиенсы
