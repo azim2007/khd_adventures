@@ -451,9 +451,23 @@ label khdDay1:
     
     #что делать после обеда
     if evMusClubJoin:                                       #елси записался в музклуб, то на репу
-        call musClubAfterLunch1Day
+        call musClubAfterLunch1DayKhd
     elif evCibClubJoin:                                     #если не записался в муз, то на пляж
         th "так, кибернетики звали меня после ужина, {w}получается сейчас я свободен, {w}как негр"
-        call beachAfterLunch1Day
+        call beachAfterLunch1DayKhd
     else:                                                   #если никуда не записался, то на пляж
-        call beachAfterLunch1Day
+        call beachAfterLunch1DayKhd
+
+    show bg int_dining_hall_sunset with Dissolve(0.5)       #в столовой
+    play ambience ambience_dining_hall_empty loop           #эмбиенс в столовой
+    bgd "огузок, чифир!!!!!"
+    ogu "пожалста чифир"
+    "за недолгое время пребывания Богдан уже закорешился с огузком"
+
+    #с кем сесть на ужин
+    if evMusClubJoin:                                       #если вступили в муз, садимся с Алисой
+        call dvDinner1DayKhd
+    elif evLibClubJoin:                                     #если вступили в библиотеку, садимся с Женей
+        call mzDinner1DayKhd
+    else:                                                   #если вступили в киберклуб, садимся с КХД
+        call titanDinner1DayKhd
