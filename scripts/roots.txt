@@ -50,6 +50,6 @@
             cleaning2Day = titan
             titan +
         не согласиться:
-            cleaning2Day = cleaning2Day = mz ? mz : sl
+            cleaning2Day = (cleaning2Day == mz) ? mz : sl
     (если не joinCiberclub) идем гулять в лес:
-        cleaning2Day = cleaning2Day = mz ? mz : sl
+        cleaning2Day = (cleaning2Day == mz) ? mz : sl

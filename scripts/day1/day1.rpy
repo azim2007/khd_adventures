@@ -471,3 +471,9 @@ label khdDay1:
         call mzDinner1DayKhd
     else:                                                   #если вступили в киберклуб, садимся с КХД
         call titanDinner1DayKhd
+
+    #что делать после ужина
+    if evCibClubJoin:                                       #если вступили в киберклуб, то идем на фильм
+        call titanEvening1DayKhd
+    else:                                                   #иначе идем менять лампочку с Дорой
+        call dorEvening1DayKhd
