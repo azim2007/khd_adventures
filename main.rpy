@@ -65,6 +65,7 @@ init:
     image cg under_water        = (khdBg + "under_water.jpg")
     image cg broken_guitar      = (khdBg + "broken_guitar.jpg")
     image cg dv_and_mustang     = (khdBg + "alice_and_mustang.jpg")
+    image cg vhs_voron          = (khdBg + "vhs_voroniny.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):

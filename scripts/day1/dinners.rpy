@@ -60,9 +60,10 @@ label mzDinner1DayKhd:
         "Богдан унес стакан в мойку и отправился на выход"
         
         play ambience ambience_camp_center_evening              #эмбиенс на улице
+        play sound sfx_close_door_1                             #закрытие двери
         scene bg ext_dining_hall_near_sunset with Dissolve(0.5) #рядом со столовой
-        show ant norm at right 
-        show mkr norm at left                                   #Тоха и Икар нормальные
+        show ant norm sunset at right 
+        show mkr norm sunset at left                                   #Тоха и Икар нормальные
         with Dissolve(0.5)
         "только Богдан вспоминал кибернетиков и сегодняшнее кино на троих, как на улице он увидел своих собутыльников 
         по фильму"
@@ -180,9 +181,10 @@ label dvDinner1DayKhd:
         "Богдан унес стакан в мойку и отправился на выход"
 
         play ambience ambience_camp_center_evening              #эмбиенс на улице
+        play sound sfx_close_door_1                             #закрытие двери
         scene bg ext_dining_hall_near_sunset with Dissolve(0.5) #рядом со столовой
-        show ant norm at right 
-        show mkr norm at left                                   #Тоха и Икар нормальные
+        show ant norm sunset at right 
+        show mkr norm sunset at left                                   #Тоха и Икар нормальные
         with Dissolve(0.5)
         "только Богдан вспоминал кибернетиков и сегодняшнее кино на троих, как на улице он увидел своих собутыльников 
         по фильму"
@@ -304,9 +306,10 @@ label titanDinner1DayKhd:
     "Богдан вместе с кибернетиками отнес чашки и тарелки в мойку и направился к выходу"
 
     play ambience ambience_camp_center_evening              #эмбиенс на улице
+    play sound sfx_close_door_1                             #закрытие двери
     scene bg ext_dining_hall_near_sunset with Dissolve(0.5) #рядом со столовой
-    show ant norm at right 
-    show mkr norm at left                                   #Тоха и Икар нормальные
+    show ant norm sunset at right 
+    show mkr norm sunset at left                                   #Тоха и Икар нормальные
     with Dissolve(0.5)
     th "ну все, ща пойдем крутить вхс кассеты"
 
