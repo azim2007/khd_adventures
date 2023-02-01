@@ -12,7 +12,7 @@ init:
     }
 
     $ evs2Day = {
-        "cleaninig" : "none",
+        "cleaning" : "none",
     }
 
     #имена папок
@@ -46,6 +46,11 @@ init:
     image bg khd_podezd         = (khdBg + "podezd.jpg")
     image bg winter_outside     = (khdBg + "winter_outside.jpg")
     image bg tram_station       = (khdBg + "tram_station.jpg")
+    image bg int_musclub_sunset = (khdBg + "int_musclub_sunset.jpg")
+    image bg int_musclub_night_nolight = (khdBg + "int_musclub_night_nolight.jpg")
+    image bg int_musclub_night_light = (khdBg + "int_musclub_night_light.jpg")
+    image bg ext_musclub_sunset = (khdBg + "ext_musclub_sunset.jpg")
+    image bg ext_musclub_night  = (khdBg + "ext_musclub_night.jpg")
 
     #дополнительные cg
     image cg chifir             = (khdBg + "chifir.jpg")
@@ -66,6 +71,7 @@ init:
     image cg broken_guitar      = (khdBg + "broken_guitar.jpg")
     image cg dv_and_mustang     = (khdBg + "alice_and_mustang.jpg")
     image cg vhs_voron          = (khdBg + "vhs_voroniny.jpg")
+    image cg stars_sky          = (khdBg + "stars_sky.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):
@@ -134,5 +140,6 @@ init python:
     #видео
     khdVidList = {
         "dota"          : khdVideos + "dota.avi", 
-        "dr_barec"      : khdVideos + "dream_bareckiy.avi", 
+        "dr_barec"      : khdVideos + "dream_bareckiy.avi",
+        "voroniny"      : khdVideos + "voroniny.avi",
     }
