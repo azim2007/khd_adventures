@@ -144,6 +144,7 @@ label musClubAfterLunch1DayKhd:
 
     play music khdMusicList["new_year"]                     #новый гад
     "дослушайте, пж"
+    show bg int_musclub_sunset with Dissolve(5)             #в музклубе
     stop music fadeout 1.0
     mi "здорово сыграли"
     show mi scared pioneer at left                          #Мику напуганна
@@ -197,7 +198,7 @@ label musClubAfterLunch1DayKhd:
                 bgd "пойдем"
 
     play sound sfx_open_door_1                              #открытие двери
-    scene bg ext_musclub_day                                #снаружи музклуба
+    show bg ext_musclub_sunset with Dissolve(0.5)           #снаружи музклуба
     show dv normal pioneer2                                 #Алиса нормальная
     with Dissolve(0.5)
     play ambience ambience_camp_center_evening loop         #эмбиенс в лагере
