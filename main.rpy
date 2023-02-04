@@ -121,6 +121,7 @@ init python:
         "scarygym"      : khdMusic + "ass_scary_gym.mp3",
         "jesus_tod"     : khdMusic + "jesus_tod.mp3",
         "new_year"      : khdMusic + "new_year.mp3",
+        "ass_no_trep"   : khdMusic + "ass_no_trepassing.mp3",
     }
 
     #дополнительные эмбиенсы
