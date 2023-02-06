@@ -27,6 +27,7 @@ init:
     $ ant = Character("Тоха", color="#ffff00", what_color="#FFDD7D")
     $ dor = Character("Дора", color="#f95252", what_color="#FFDD7D")
     $ ogu = Character("Огузок", color="#1619c2", what_color="#FFDD7D")
+    $ dub = Character("Мудрый Дуб", color= "#165600", what_color="#FFDD7D")
 
     #словарь цветов, в зависимости от времени
     $ timeColorDict = {
@@ -73,6 +74,7 @@ init:
     image cg vhs_voron          = (khdBg + "vhs_voroniny.jpg")
     image cg stars_sky          = (khdBg + "stars_sky.jpg")
     image cg change_lamp        = (khdBg + "change_lamp.jpg")
+    image cg mudruy_dub         = (khdBg + "mudruy_dub.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):
