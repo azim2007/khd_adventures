@@ -146,4 +146,5 @@ init python:
         "dota"          : khdVideos + "dota.avi", 
         "dr_barec"      : khdVideos + "dream_bareckiy.avi",
         "voroniny"      : khdVideos + "voroniny.avi",
+        "dr_sad"        : khdVideos + "sad_dream.webm",
     }

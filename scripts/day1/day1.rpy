@@ -477,3 +477,6 @@ label khdDay1:
         call titanEvening1DayKhd
     else:                                                   #иначе идем менять лампочку с Дорой
         call dorEvening1DayKhd
+
+    "ща типо сон будет, досмотрите до конца пж"
+    $ renpy.movie_cutscene(khdVidList["dr_sad"])            #грустный сон
