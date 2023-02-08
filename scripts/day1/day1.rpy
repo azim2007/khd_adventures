@@ -480,3 +480,4 @@ label khdDay1:
 
     "ща типо сон будет, досмотрите до конца пж"
     $ renpy.movie_cutscene(khdVidList["dr_sad"])            #грустный сон
+    jump khdDay2                                            #второй день
