@@ -48,7 +48,6 @@
     (если joinCiberclub) идем на фильмец:
         согласиться на субботник с кхд (при cleaning2Day = none):
             cleaning2Day = titan
-            titan +
         не согласиться:
             cleaning2Day = (cleaning2Day == mz) ? mz : sl
     (если не joinCiberclub) идем гулять в лес:
