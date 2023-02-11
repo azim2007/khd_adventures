@@ -36,7 +36,7 @@ label khdDay2:
     bgd "ага, хорошо, до встречи"
     "Богдан взял свои мыльно-рыльные и вышел на улицу"
     play sound sfx_close_door_1                             #звук закрытия двери
-    show bg ext_house_of_mt_day with Dissolve(0.5)          #дом Доры снаружи
+    scene bg ext_house_of_mt_day with Dissolve(0.5)         #дом Доры снаружи
     play ambience ambience_camp_center_day loop             #эмбиенс на улице
     "солнце уже было высоко над горизонтом, {w}все-таки лето, как никак"
     "по улицам уже бегали ранние пташки, {w}Богдану так и хотелось отвесить подзатыльник или 
@@ -177,9 +177,22 @@ label khdDay2:
     th "какой раз я уже за это утро иду по этой дороге?"
     show bg ext_square_day with Dissolve(0.5)               #площадь
 
+    stop music fadeout 1.0
     "все уже были на линейке"
     show cg lineyka with Dissolve(0.5)                      #линейка
     "Дора начинала рассказывать про планы Совенковой плановой экономики на день, а 
     именно - про субботник, про то, как важно трудиться, бла бла бла, {w}и.... {w} ДИСКОТЕКА????"
     th "мммм, а дискотека - звучит по попсоебски, {w}НЕ ПОЙДУ ТУДА НАХУЙ"
     "мысли говорят сами за себя. {w}даже не ждите медляков с сопливыми описаниями обжиманий, стояков и смущений"
+
+    scene bg ext_square_day with Dissolve(0.5)              #площадь
+
+    if evs2Day["cleaning"] == "sl":                         #если субботник со славей
+        call slMorningDay2khd
+    elif evs2Day["cleaning"] == "mz":                    #если субботник с Женей
+        call mzMorningDay2khd
+    elif evs2Day["cleaning"] == "titan":                 #если субботник с кхд
+        call titanMorningDay2khd
+    else:                                                   #дебаг от бога
+        "ERROR: cleaning имеет неправильное значение"
+    
