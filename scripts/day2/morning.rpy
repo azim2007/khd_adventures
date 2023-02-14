@@ -59,6 +59,7 @@ label slMorningDay2khd:
     "Богдан со Славей вместе встали из-за стола и отнесли посуду в мойку"
 
     show bg ext_dining_hall_near_day with Dissolve(0.5)         #столовая рядом
+    play ambience ambience_camp_center_day loop                 #эмбиенс в лагере
     show sl smile pioneer                                       #Славя улыбается
     stop music fadeout 1.0
     sl "ну все, Богдан, {w}теперь приступаем к социалистическому труду"
@@ -135,6 +136,23 @@ label slMorningDay2khd:
     у Богдана по спине потекли ручейки"
     "прогноз Богдана о том, что работа легкая оказался ложным: из-за постоянных сокращательных 
     движений руками, они у него начали ныть"
+    th "бляяя, у нас перекур будет, не?"
+    "тут Славя как будто прочитала мысли Богдана и подошла к нему для объявления перекура"
+    
+    show sl normal pioneer with Dissolve(0.5)                   #Славя нормальная
+    sl "объявляю перерыв, {w}можно сходить попить"
+    bgd "урааа"
+    th "ну все, ща помоюсь"
+    "и Богдан тут же побежал к умывальникам, чтобы помыться"
+
+    play sound sfx_run_forest                                   #звук бега
+    window hide
+    show bg ext_houses_day at khdRun with Dissolve(0.5)         #дорога с домиками
+    $ renpy.pause(1.0)
+    show bg ext_washstand_day with Dissolve(0.5)                #Умывальники
+    stop sound fadeout 0.5
+
+    
     return
 
 #***************************** ПРОДОЛЖЕНИЕ УТРА С ЖЕНЕЙ (ЕСЛИ СУББОТНИК С ЖЕНЕЙ) **********
