@@ -170,11 +170,50 @@ label slMorningDay2khd:
 
     show bg ext_washstand_day with Dissolve(0.5)                #умывальники далеко
     "обратно Богдан пошел неспеша"
+    stop music fadeout 1.0
     show bg ext_houses_day with Dissolve(0.5)                   #дорога с домиками
     $ renpy.pause(2.0)
     show bg ext_square_day with Dissolve(0.5)                   #площадь
     show sl normal pioneer far with Dissolve(0.5)               #Славя нормальная
     "Славя уже была на месте и подметала свою территорию"
+    sl "о, вернулся, {w}а ну давай выше нос, {w}всего полчаса осталось и обед"
+
+    hide sl normal pioneer with Dissolve(0.5)                   #Славя прячется
+    th "что ж, {w}ну ладно"
+    "остаток субботника Богдан провел в своих мыслях, машинально повторяя одни и те же действия 
+    подметания"
+    window hide
+    play sound sfx_dinner_horn_processed                        #звук горна
+    $ renpy.pause(2.0)
+    window show
+    "от мыслей его оторвал звук горна, означавший время обеда"
+    show sl normal pioneer with Dissolve(0.5)                   #Славя нормальная
+    "к Богдану подошла Славя"
+    show sl shy pioneer                                         #Славя смущена
+    sl "ты не мог бы мне помочь отнести метлы обратно?"
+    bgd "кшн помогу, о чем базар то?"
+    show sl smile pioneer                                       #Славя улыбается
+    show bg ext_houses_day with Dissolve(0.5)                   #дорога с домиками
+    "ну и пошел Богдан вместе со Славей относить метлы обратно к умывальникам"
+    show bg ext_washstand_day with Dissolve(0.5)                #умывальники
+    sl "спасибо, что помог"
+    bgd "пожалуйста, {w}а теперь давай на обед пойдем"
+    show sl normal pioneer                                      #Славя нормальная
+    sl "давай"
+    show bg ext_houses_day with Dissolve(0.5)                   #дорога с домиками
+    "ну и пошел Богдан вместе со Славей на обед"
+
+    window hide
+    show bg ext_square_day with Dissolve(0.5)                   #площадь
+    $ renpy.pause(1.0)
+    show bg ext_dining_hall_away_day with Dissolve(0.5)         #столовая
+    $ renpy.pause(1.0)
+    show bg ext_dining_hall_near_day with Dissolve(0.5)         #столовая ближе
+    $ renpy.pause(1.0)
+    window show
+    hide sl normal pioneer woth Dissolve(0.5)                   #Славя уходит
+    "Славя шла быстрее Богдана и уже зашла в столовую"
+    "Богдан зашел следом за ней"
     return
 
 #***************************** ПРОДОЛЖЕНИЕ УТРА С ЖЕНЕЙ (ЕСЛИ СУББОТНИК С ЖЕНЕЙ) **********
