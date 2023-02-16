@@ -189,9 +189,9 @@ label khdDay2:
 
     if evs2Day["cleaning"] == "sl":                         #если субботник со славей
         call slMorningDay2khd
-    elif evs2Day["cleaning"] == "mz":                    #если субботник с Женей
+    elif evs2Day["cleaning"] == "mz":                       #если субботник с Женей
         call mzMorningDay2khd
-    elif evs2Day["cleaning"] == "titan":                 #если субботник с кхд
+    elif evs2Day["cleaning"] == "titan":                    #если субботник с кхд
         call titanMorningDay2khd
     else:                                                   #дебаг от бога
         "ERROR: cleaning имеет неправильное значение"

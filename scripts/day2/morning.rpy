@@ -156,9 +156,9 @@ label slMorningDay2khd:
     stop sound fadeout 0.5
 
     th "ну все, ща помоемся"
-    show bg ext_washstand2_day with Dissolve(0.5)               #умывальник близко
+    scene bg ext_washstand2_day with Dissolve(0.5)               #умывальник близко
     "Богдан быстро начал стягивать с себя одежду, дабы помыться под холодненькой водой"
-    play sound sfx_blanket_off                                  #звук всполох
+    play sound sfx_blanket_off_stand                            #звук всполох
     "Богдан бросил одежду на пол и открыл кран"
     play sound sfx_water_sink_stream                            #струя воды
     th "мммм, {w}как приятно"
@@ -211,13 +211,33 @@ label slMorningDay2khd:
     show bg ext_dining_hall_near_day with Dissolve(0.5)         #столовая ближе
     $ renpy.pause(1.0)
     window show
-    hide sl normal pioneer woth Dissolve(0.5)                   #Славя уходит
+    hide sl normal pioneer with Dissolve(0.5)                   #Славя уходит
     "Славя шла быстрее Богдана и уже зашла в столовую"
     "Богдан зашел следом за ней"
     return
 
 #***************************** ПРОДОЛЖЕНИЕ УТРА С ЖЕНЕЙ (ЕСЛИ СУББОТНИК С ЖЕНЕЙ) **********
 label mzMorningDay2khd:
+    show mz normal pioneer with Dissolve(0.5)                   #Женя нормальная
+    "Богдан помнил, что при вступлении в библиотеку, он пообещал Жене помочь в уборке и потому встал 
+    рядом с ней"
+    bgd "доброго"
+    show mz bukal pioneer                                       #Женя с презрением
+    mz "аааа...{w} да, доброе утро"
+    show mz normal pioneer                                      #Женя нормальная
+    "Женя была очень заспанной, будто всю ночь таскала уголь в шахтах"
+    "наконец, Дора закончила рассказывать планы на день, и как раз вовремя прозвучал горн на завтрак"
+    
+    play sound sfx_dinner_horn_processed                        #горн
+    $ renpy.pause(1.0)
+    "все пионеры толпой пошли на завтрак"
+    play music music_list["went_fishing_caught_a_girl"]         #веселая музыка
+    "Богдан решил поприкалываться над Женей"
+    bgd "йоу, че такая кислая?"
+    "вопреки ожиданиям Богдана Женя ответила на вопрос спокойно"
+    mz "спалось плохо"
+    th "ну и ладно"
+    show bg ext_dining_hall_away_day with Dissolve(0.5)         #столовая
 
 #***************************** ПРОДОЛЖЕНИЕ УТРА С КХД (ЕСЛИ СУББОТНИК С КХД) **********
 label titanMorningDay2khd:
