@@ -52,6 +52,7 @@ init:
     image bg int_musclub_night_light = (khdBg + "int_musclub_night_light.jpg")
     image bg ext_musclub_sunset = (khdBg + "ext_musclub_sunset.jpg")
     image bg ext_musclub_night  = (khdBg + "ext_musclub_night.jpg")
+    image bg int_wine_basement  = (khdBg + "int_wine_basement.jpg")
 
     #дополнительные cg
     image cg chifir             = (khdBg + "chifir.jpg")

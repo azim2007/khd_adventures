@@ -52,3 +52,15 @@
             cleaning2Day = (cleaning2Day == mz) ? mz : sl
     (если не joinCiberclub) идем гулять в лес:
         cleaning2Day = (cleaning2Day == mz) ? mz : sl
+
+день 2:
+    (если cleaning2Day == sl) субботник со Славей:
+        ниче
+    (если cleaning2Day == mz) субботник с Женей:
+        помочь Мику:
+            mz +
+        не помогать:
+            ниче
+    (если cleaning2Day == titan) субботник с Кхд:
+        
+    
