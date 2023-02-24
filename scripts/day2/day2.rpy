@@ -195,4 +195,6 @@ label khdDay2:
         call titanMorningDay2khd
     else:                                                   #дебаг от бога
         "ERROR: cleaning имеет неправильное значение"
+
+    play music music_list["two_glasses_of_melancholy"]      #спокойная музыка
     
