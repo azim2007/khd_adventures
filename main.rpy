@@ -129,6 +129,7 @@ init python:
         "new_year"      : khdMusic + "new_year.mp3",
         "ass_no_trep"   : khdMusic + "ass_no_trepassing.mp3",
         "feeling_good"  : khdMusic + "feeling_good.ogg",
+        "ass_doomed"    : khdMusic + "ass_doomed_to_be_enslavement.mp3",
     }
 
     #дополнительные эмбиенсы
