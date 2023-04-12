@@ -79,6 +79,8 @@ init:
     image cg lineyka            = (khdBg + "lineyka1.png")
     image cg gorgorod           = (khdBg + "gorgorod.jpg")
     image cg mz_lib             = (khdBg + "mz_library.jpg")
+    image cg new_arm            = (khdBg + "new_arm.jpg")
+    image cg author             = (khdBg + "author.jpg")
 
     #экран для перехода между днями
     screen nextDay(dayName, screenName):

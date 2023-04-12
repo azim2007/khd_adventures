@@ -198,4 +198,27 @@ label khdDay2:
         "ERROR: cleaning имеет неправильное значение"
 
     play music music_list["two_glasses_of_melancholy"]      #спокойная музыка
+    play ambience ambience_dining_hall_full
+    scene bg int_dining_hall_people_day with Dissolve(0.5)
+    play sound sfx_open_door_1
+    "Богдан зашел в столовую, взял чифир, и сел за стол, {w}один"
+    th "хммм, че то сегодня чифир чернее обычного, {w}ну да и ладно"
+    play sound khdAmbList["drinking"]
+    "Богдан как обычно залпом выпил чифир, {w}но в этот раз он об этом пожалел"
+    stop sound
+    show prologue_dream
+    th "ой, чето меня мутит... {w}ЭЭЭЭЭ, ЭТО ЧЕ ЗА ПОМЕХИ???"
+    "Богдан попытался встать, но тело его не слушалось, он вообще ничего не мог сделать"
+    th "ЭЭЭЭЭ, ЧТО ПРОИСХОДИТ????"
+    show blinking
+    th "что-то спать захотелось"
+    show blink
+    $ renpy.pause(0.5)
+    show black
+    stop music fadeout 1.0
+    stop ambience
+    stop sound
+    $ renpy.pause(1.0)
+    hide prologue_dream
+    call khdProl
     
